@@ -9,8 +9,8 @@
 <body>
     <label for="theme"> Select theme</label>
     <select id="theme">
-        <option value="white"> white</option>
-        <option value="black"> black</option>
+        <option value='white'> white</option>
+        <option value='black'> black</option>
         <!--the value on the syntax will correspond to the java command-->       
     </select>
     <h1> this is my website</h1>
@@ -27,7 +27,7 @@
         } 
 
         select.onchange = function() {
-            (select.value === black) ? update('red' , 'black') : ('black' , 'red');
+            (select.value === 'black') ? update('black' , 'white') : update('white' , 'black');
         }
     </script>
 </body>
