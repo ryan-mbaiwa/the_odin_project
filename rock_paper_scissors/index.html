@@ -8,7 +8,18 @@
 </head>
 <body>
     <script>
-        
+         let playerSelection = prompt("Choose your weapon", 'rock');
+                playerSelection = playerSelection.toLowerCase();
+            const computerSelection = computerPlay();
+        // Allow user to select weapon and convert the text to lowercase so that it wont be case senstitive
+
+        function computerPlay(){
+            let options = ['rock', 'paper', 'scissors'];
+            let choice = options[ Math.floor(Math.random()*options.length)];
+            return choice;
+        }
+        // Random choice of weapon by the computer value transfared to computer selection
+
     </script>
 </body>
 </html>
